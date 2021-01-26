@@ -1,0 +1,12 @@
+{
+  "name": "itunes-api",
+  "version": "1.0.0",
+  "description": "TP2 Web",
+  "scripts": {
+    "start": "serve"
+  },
+  "dependencies": {
+    "serve": "^11.3.2"
+  },
+  "author": "Sörel NADAUD"
+}

@@ -1,0 +1,94 @@
+* {
+    font-family: Inter, sans-serif;
+}
+
+[type='text'] {
+    appearance: none;
+    background-color: #fff;
+    border-width: 2px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.duration-cell, .duration-header {
+    max-width: 90px;
+}
+
+.artist-cell, .artist-header {
+    max-width: 120px;
+}
+
+.track-name-or-album-cell, .track-name-or-album-header {
+    max-width: 230px;
+}
+
+@media (min-width: 420px) {
+    .song-info-text {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 420px) {
+    .song-info-text {
+        white-space: nowrap;
+        max-width: 9rem;
+    }
+}
+
+/* Indicateur de chargement */
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #4F46E5;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
